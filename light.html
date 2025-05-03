@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark/light</title>
+    <style>
+      .dark-mode {
+        background-color: #222;
+        color: aliceblue;
+      }
+      button {
+        height: 45px;
+        width: 150px;
+        background-color: lightblue;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, Welcome!</h1>
+    <button>Dark Mode</button>
+
+    <script>
+      let button = document.querySelector("button");
+
+      button.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+      });
+    </script>
+  </body>
+</html>
